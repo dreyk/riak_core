@@ -80,7 +80,7 @@
 -record(state, {name,
 		strategy               :: strategy(),
 		children = []          :: [child_rec()],
-		dynamics               :: dict:dict() | sets:sets(),
+		dynamics               :: ?DICT() | ?SET(),
 		intensity              :: non_neg_integer(),
 		period                 :: pos_integer(),
 		restarts = [],
